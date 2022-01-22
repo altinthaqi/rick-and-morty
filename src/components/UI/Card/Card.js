@@ -26,9 +26,15 @@ function Card(props) {
         id={props.id}
         badgeText={props.badgeText}
         showcasedIn={props.showcasedIn}
+        wrap={props.wrap}
       />
       <CardTitle cardTitle={props.cardTitle} />
-      <CardButton buttonText={props.buttonText} buttonIcon={props.buttonIcon} />
+      <CardButton
+        id={props.id}
+        path={props.path}
+        buttonText={props.buttonText}
+        buttonIcon={props.buttonIcon}
+      />
     </Box>
   );
 }

@@ -21,6 +21,8 @@ function CharactersIterating({ userInput }) {
             showcasedIn={character.episode.length}
             id={character.id}
             cardTitle={character.name}
+            path="characters"
+            wrap="wrap"
           />
         ))}
     </>
