@@ -2,25 +2,23 @@ import { gql, useQuery } from "@apollo/client";
 
 const GET_EPISODE = gql`
   query getEpisode($id: ID!) {
-    query {
-      episode(id: $id) {
+    episode(id: $id) {
+      name
+      episode
+      characters {
+        id
         name
-        episode
-        characters {
+        species
+        location {
           id
           name
-          species
-          location {
-            id
-            name
-            dimension
-          }
-          image
-          episode {
-            id
-            name
-            episode
-          }
+          dimension
+        }
+        image
+        episode {
+          id
+          name
+          episode
         }
       }
     }

@@ -15,7 +15,7 @@ function CharactersIterating({ userInput }) {
         .map((character) => (
           <Card
             cardImage={character.image}
-            buttonText="Character"
+            buttonText="View Character"
             buttonIcon={<BsPerson />}
             badgeText={character.species}
             showcasedIn={character.episode.length}

@@ -23,7 +23,7 @@ function Characters() {
           columns={[2, 2, 3, 4]}
           bg="gray.50"
           rounded="lg"
-          spacing={10}
+          spacingX={10}
         >
           <CharactersIterating userInput={userInput} />
         </SimpleGrid>
