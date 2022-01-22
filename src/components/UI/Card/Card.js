@@ -19,6 +19,7 @@ function Card(props) {
       bg="white"
       p={2}
       rounded="xl"
+      my={10}
     >
       <CardImage cardImage={props.cardImage} />
       <CardInfo
