@@ -8,14 +8,13 @@ import Character from "./pages/Character";
 function App() {
   return (
     <BrowserRouter>
-      {/* <Routes>
-        <Route />
-      </Routes> 
-      <Characters />
-      <Locations />
-      <Location />*/}
-
-      <Character />
+      <Routes>
+        <Route path="/" element={<Characters />} />
+        <Route path="/characters" element={<Characters />} />
+        <Route path="/characters/:id" element={<Character />} />
+        <Route path="/locations" element={<Locations />} />
+        <Route path="/locations/:id" element={<Location />} />
+      </Routes>
     </BrowserRouter>
   );
 }
