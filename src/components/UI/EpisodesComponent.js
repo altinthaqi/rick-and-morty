@@ -19,11 +19,12 @@ function EpisodesComponent(props) {
         align="stretch"
       >
         <Text fontWeight="bold" color="gray.500">
-          Episodes:
+          Is also seen on {props.episodes.length} episodes:
         </Text>
         {props.episodes &&
           props.episodes.map((episode) => (
             <Box
+              key={episode.id}
               alignItems="flex-start"
               display="flex"
               justifyContent="flex-start"

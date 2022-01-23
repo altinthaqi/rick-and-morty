@@ -24,6 +24,7 @@ function Character() {
           location={data.character.location.name}
           badgeText={data.character.species}
           id={id}
+          locationId={data.character.location.id}
         />
 
         <EpisodesComponent episodes={data.character.episode} />

@@ -3,7 +3,7 @@ import React from "react";
 import { BsPerson } from "react-icons/bs";
 import Card from "../UI/Card/Card";
 
-function EpisodeCast(props) {
+function LocationCast(props) {
   return (
     <SimpleGrid
       columns={[2, 2, 3, 4]}
@@ -11,7 +11,7 @@ function EpisodeCast(props) {
       rounded="lg"
       spacingX={[2, 10]}
     >
-      {props.episodeCharacters.map((character) => (
+      {props.residents.map((character) => (
         <Card
           key={character.id}
           cardImage={character.image}
@@ -28,4 +28,4 @@ function EpisodeCast(props) {
   );
 }
 
-export default EpisodeCast;
+export default LocationCast;

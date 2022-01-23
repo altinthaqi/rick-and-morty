@@ -1,5 +1,6 @@
-import { Badge, Box, Spacer } from "@chakra-ui/react";
+import { Badge, Box } from "@chakra-ui/react";
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 function CardInfo(props) {
   return (
@@ -18,6 +19,7 @@ function CardInfo(props) {
       >
         {props.badgeText}
       </Badge>
+
       <Box
         color="gray.500"
         fontWeight="semibold"
@@ -26,11 +28,13 @@ function CardInfo(props) {
         textTransform="uppercase"
         ml="2"
       >
-        {props.location
-          ? `${props.location} ${
-              props.episode ? ` ----- Ep: ${props.episode}` : ""
-            }`
-          : `${props.showcasedIn} episodes ⋅ id #${props.id}`}
+        {props.location && (
+          <NavLink to={`/locations/${props.locationId}`}>
+            {props.location}
+          </NavLink>
+        )}
+        {props.episode && `----- Ep: ${props.episode}`}
+        {props.showcasedIn && `${props.showcasedIn} episodes ⋅ id #${props.id}`}
       </Box>
     </Box>
   );

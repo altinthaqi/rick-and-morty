@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import Loading from "../components/UI/Loading";
 import { useEpisode } from "../hooks/useEpisode";
 import { Box, Container, Divider, Text } from "@chakra-ui/react";
-import EpisodeIntro from "../components/Episodes/EpisodeIntro";
+import GradientIntro from "../components/UI/GradientIntro";
 import EpisodeCast from "../components/Episodes/EpisodeCast";
 
 function Episode() {
@@ -14,7 +14,12 @@ function Episode() {
   return (
     <Box bg="gray.50">
       <Container maxW="5xl" alignContent="center">
-        <EpisodeIntro name={data.episode.name} />
+        <GradientIntro
+          introType="EPISODE"
+          headingHelper="EP:"
+          badgeColor="purple"
+          name={data.episode.name}
+        />
 
         <Divider />
 

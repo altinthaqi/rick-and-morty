@@ -1,12 +1,13 @@
 import React from "react";
-import { Container, SkeletonCircle, SkeletonText } from "@chakra-ui/react";
+import { Container, SkeletonText } from "@chakra-ui/react";
 
 function Loading() {
   return (
-    <Container>
-      <SkeletonCircle size="100" my={10} mt={20} />
-      <SkeletonText mt="4" noOfLines={4} spacing="4" />
-      <SkeletonText mt="4" noOfLines={4} spacing="4" />
+    <Container overflow="hidden">
+      <SkeletonText my="7" noOfLines={10} spacing="4" />
+      <SkeletonText my="7" noOfLines={10} spacing="4" />
+      <SkeletonText my="7" noOfLines={10} spacing="4" />
+      <SkeletonText my="7" noOfLines={10} spacing="4" />
     </Container>
   );
 }

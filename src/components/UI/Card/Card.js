@@ -21,7 +21,7 @@ function Card(props) {
       rounded="xl"
       my={10}
     >
-      <CardImage cardImage={props.cardImage} />
+      {props.cardImage && <CardImage cardImage={props.cardImage} />}
       <CardInfo
         id={props.id}
         badgeText={props.badgeText}
