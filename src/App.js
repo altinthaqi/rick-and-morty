@@ -7,13 +7,14 @@ import Character from "./pages/Character";
 import Navigation from "./layout/Navigation";
 import Episodes from "./pages/Episodes";
 import Episode from "./pages/Episode";
+import About from "./pages/About";
 
 function App() {
   return (
     <BrowserRouter>
       <Navigation />
       <Routes>
-        <Route path="/" element={<Characters />} />
+        <Route path="/" element={<About />} />
         <Route path="/characters" element={<Characters />} />
         <Route path="/characters/:id" element={<Character />} />
         <Route path="/episodes" element={<Episodes />} />
