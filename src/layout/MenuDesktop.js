@@ -1,15 +1,10 @@
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink } from "@chakra-ui/react";
 import React from "react";
 import { Link } from "react-router-dom";
-import { CgFormatSlash } from "react-icons/cg";
 
 function MenuDesktop() {
   return (
-    <Breadcrumb
-      display={["none", "none", "block"]}
-      spacing="8px"
-      separator={<CgFormatSlash color="black" />}
-    >
+    <Breadcrumb display={["none", "none", "block"]} spacing="10px" separator="">
       <BreadcrumbItem>
         <BreadcrumbLink as={Link} color="gray.500" to="/characters">
           Characters
