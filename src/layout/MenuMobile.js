@@ -20,8 +20,9 @@ function MenuMobile() {
           as={IconButton}
           aria-label="Options"
           icon={<GiHamburgerMenu />}
-          colorScheme="teal"
+          colorScheme="gray"
           variant="solid"
+          borderRadius="full"
         />
         <MenuList>
           <MenuGroup title="Links">
@@ -34,11 +35,6 @@ function MenuMobile() {
             <MenuItem as={NavLink} to="/episodes">
               Episodes
             </MenuItem>
-          </MenuGroup>
-          <MenuDivider />
-          <MenuGroup title="Help">
-            <MenuItem>Docs</MenuItem>
-            <MenuItem>FAQ</MenuItem>
           </MenuGroup>
         </MenuList>
       </Menu>

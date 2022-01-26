@@ -6,18 +6,33 @@ function MenuDesktop() {
   return (
     <Breadcrumb display={["none", "none", "block"]} spacing="10px" separator="">
       <BreadcrumbItem>
-        <BreadcrumbLink as={Link} color="gray.500" to="/characters">
+        <BreadcrumbLink
+          fontWeight="semibold"
+          as={Link}
+          color="gray.500"
+          to="/characters"
+        >
           Characters
         </BreadcrumbLink>
       </BreadcrumbItem>
 
       <BreadcrumbItem>
-        <BreadcrumbLink as={Link} color="gray.500" to="/locations">
+        <BreadcrumbLink
+          fontWeight="semibold"
+          as={Link}
+          color="gray.500"
+          to="/locations"
+        >
           Locations
         </BreadcrumbLink>
       </BreadcrumbItem>
       <BreadcrumbItem>
-        <BreadcrumbLink as={Link} color="gray.500" to="/episodes">
+        <BreadcrumbLink
+          fontWeight="semibold"
+          as={Link}
+          color="gray.500"
+          to="/episodes"
+        >
           Episodes
         </BreadcrumbLink>
       </BreadcrumbItem>
