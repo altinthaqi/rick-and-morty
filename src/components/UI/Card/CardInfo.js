@@ -34,7 +34,7 @@ function CardInfo(props) {
           </NavLink>
         )}
         {props.episode && `----- Ep: ${props.episode}`}
-        {props.showcasedIn && `${props.showcasedIn} episodes ⋅ id #${props.id}`}
+        {props.showcasedIn && `${props.showcasedIn} episodes`}
       </Box>
     </Box>
   );

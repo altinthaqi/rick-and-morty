@@ -7,10 +7,10 @@ function CardImage(props) {
       {props.cardImage && (
         <Image
           src={props.cardImage}
-          boxSize="200px"
+          width="100%"
           objectFit="cover"
-          borderRadius="xl"
-          mt={2}
+          borderTopRadius="xl"
+          boxShadow="md"
         />
       )}
     </>

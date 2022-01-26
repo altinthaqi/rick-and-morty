@@ -17,7 +17,6 @@ function Card(props) {
       flexDirection="column"
       boxShadow="sm"
       bg="white"
-      p={2}
       rounded="xl"
       my={10}
     >

@@ -26,7 +26,7 @@ function Characters() {
           onUserType={userInputHandler}
         />
         <SimpleGrid
-          columns={[2, 2, 3, 4]}
+          columns={[1, 2, 3, 4]}
           bg="gray.50"
           rounded="lg"
           spacingX={[2, 10]}

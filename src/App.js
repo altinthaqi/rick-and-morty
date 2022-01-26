@@ -8,11 +8,13 @@ import Navigation from "./layout/Navigation";
 import Episodes from "./pages/Episodes";
 import Episode from "./pages/Episode";
 import About from "./pages/About";
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
   return (
     <BrowserRouter>
       <Navigation />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<About />} />
         <Route path="/characters" element={<Characters />} />

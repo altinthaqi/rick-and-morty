@@ -13,12 +13,7 @@ function CardButton(props) {
       my={2}
     >
       {props.buttonIcon && (
-        <Button
-          leftIcon={props.buttonIcon}
-          colorScheme="teal"
-          size="xs"
-          variant="outline"
-        >
+        <Button my={2} colorScheme="teal" size="sm" variant="outline">
           {props.buttonText}
         </Button>
       )}
